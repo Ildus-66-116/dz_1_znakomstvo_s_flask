@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+
+{% block main %}
+<main class="container">
+    {% block clothes_main %}
+    <h1>Одежда</h1>
+    {% endblock %}
+    <table>
+        <tr>
+            <td>{{type}}</td>
+            <td>{{sex}}</td>
+            <td>{{size}}</td>
+            <td>{{price}}</td>
+        </tr>
+        {% block tr %}
+        {% for item in item_list %}
+        <tr>
+            <td>{{item.type}}</td>
+            <td>{{item.sex}}</td>
+            <td>{{item.size}}</td>
+            <td>{{item.price}}</td>
+        </tr>
+        {%endfor%}
+        {% endblock %}
+    </table>
+</main>
+{% endblock %}

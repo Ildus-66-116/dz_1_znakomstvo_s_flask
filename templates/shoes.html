@@ -1,0 +1,16 @@
+{% extends 'clothes.html' %}
+
+{% block clothes_main %}
+<h1>Обувь</h1>
+{% endblock %}
+
+{% block tr %}
+{% for item in item_list %}
+<tr>
+    <td>{{item.type}}</td>
+    <td>{{item.sex}}</td>
+    <td>{{item.size}}</td>
+    <td>{{item.price}}</td>
+</tr>
+{%endfor%}
+{% endblock %}

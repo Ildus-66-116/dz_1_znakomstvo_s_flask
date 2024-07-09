@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DZ_1</title>
+    <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a class="nav-link" href="/">Главная</a>
+            <a class="nav-link" href="/clothes/">Одежда</a>
+            <a class="nav-link" href="/shoes/">Обувь</a>
+            <a class="nav-link" href="/jacket/">Куртки</a>
+        </nav>
+    </header>
+    <main>
+        {% block main %}
+        <img src="../static/img/63_Mv7K6rHg.jpg" alt="picture" />
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>Все права защищены им:</p>
+            <img class="footer_img" src="../static/img/ildus.jpeg" alt="ildus" />
+        </div>
+    </footer>
+</body>
+
+</html>
